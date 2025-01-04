@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="./node_modules/dragscroll/dragscroll.js"></script>
+  <title>PUP Kiosk</title>
+</head>
+<body>
+  <div class="header">
+    
+  </div>
+  <div class="map dragscroll">
+    <img src="images/main-map.png" alt="PUP Map" usemap="#pupmap">
+
+    <map name="pupmap">
+      <area shape="rect" coords="2139,511,2192,557" alt="Pylon" data-file="locations/pylon.html" title="Pylon">
+
+      <area shape="rect" coords="2028,469,2085,532" alt="Visitor Information Center" data-file="locations/visitor.html" title="Visitor Information Center">
+
+      <area shape="rect" coords="2104,632,2134,656" alt="Guard House" data-file="locations/guard.html" title="Guard House">
+
+      <area shape="rect" coords="1763,325,1921,473" alt="Tennis Court" data-file="locations/tcourt.html" title="Tennis Court">
+
+      <area shape="rect" coords="1500,308,1703,460" alt="Basketball and Volleyball Court" data-file="locations/bvcourt.html" title="Basketball and Volleyball Court">
+
+      <area shape="rect" coords="1670,68,1952,276" alt="PUP Gymnasium" data-file="locations/gymnasium.html" title="PUP Gymnasium">
+
+      <area shape="rect" coords="1350,50,1598,299" alt="Swimming Pool" data-file="locations/pool.html" title="Swimming Pool">
+
+      <!--<area shape="rect" coords="1648,637,1676,649" alt="Gazebo" data-file="locations/gazebo.html" title="Gazebo">-->
+
+      <area shape="circle" coords="1412,556,50" alt="PUP Obelisk" data-file="locations/obelisk.html" title="PUP Obelisk">
+
+      <area shape="poly" coords="1423,822,1631,722,1519,647,1520,876" alt="Apolinario Mabini Shrine" data-file="locations/shrine.html" 
+      title="Apolinario Mabini Shrine">
+
+      <area shape="rect" coords="1300,100,1329,306" alt="Tahanan ng Alumni" data-file="locations/tahanan.html" title="Tahanan ng Alumni">
+
+      <area shape="poly" coords="1442,1062,1547,1456,2217,799,1883,656" alt="PUP Oval" data-file="locations/oval.html" title="PUP Oval">
+
+      <area shape="circle" coords="1272,1205,120" alt="Interfaith Chapel" data-file="locations/chapel.html" title="Interfaith Chapel">
+
+      <area shape="poly" coords="701,789,625,917,588,1046,765,1352,932,1405,1018,1404,1040,1100,1305,918,1235,790,995,930,700,792" alt="PUP Main Building" data-file="locations/main-building.html" title="PUP Main Building">
+
+      <area shape="circle" coords="961,773,60" alt="Ampitheater" data-file="locations/ampi.html" title="Ampitheater">
+
+      <area shape="poly" coords="877,694,880,746,995,720,1132,539,1190,411,1110,361,1049,527,957,561,944,676" alt="PUP Lagoon" data-file="locations/lagoon.html" title="PUP Lagoon">
+
+      <area shape="poly" coords="946,548,1050,512,989,321,1167,265,1130,156,952,215,884,25,780,65,845,254,855,342" alt="Library" data-file="locations/library.html" title="Library">
+
+      <area shape="poly" coords="415,495,676,646,724,566,464,412,416,494" alt="Charlie del Rosario Hall" data-file="locations/charlie.html" title="Charlie del Rosario Hall">
+
+      <area shape="poly" coords="645,1388,672,1432,709,1433,678,1361,656,1382,643,1387" alt="PUP Ferry Station" data-file="locations/ferry.html" title="PUP Ferry Station">
+
+      <area shape="poly" coords="614,1313,690,1290,523,1004,283,264,270,265" alt="PUP Linear Park" data-file="locations/linear.html" title="PUP Linear Park">
+
+      <area shape="poly" coords="0,0,95,4,237,213,652,1457,0,1459" alt="Pasig River" data-file="locations/pasig-river.html" title="Pasig River">
+
+    </map>
+  </div>
+
+  <div id="infoModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+  
+  <script src="./js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+}
+
+header {
+  background-color: #800000;
+  color: gold;
+  text-align: center;
+  padding: 25px; /* Adds padding around the header */
+  border: none; /* Close the border declaration */
+  margin-bottom: 20px;
+}
+
+/* Container for image and text */
+.content {
+  display: block; /* Change from flex to block to stack elements vertically */
+  
+}
+
+/* Style for the image */
+.location-img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Adds space below the image */
+  margin-left: 90px;
+}
+
+/* Style for the text */
+.location-info {
+  max-width: 55%;
+  padding-left: 115px;
+  overflow: auto;
+  text-align: justify;
+}
+
+/* Separator between image and text */
+.content::before {
+  content: '';
+  border-left: 2px solid #ddd;
+  margin-left: 20px;
+  height: 100%;
+}
+
+/* Styling for paragraph text */
+.location-info p {
+  line-height: 1.6;
+}
+
+/* Modal content box */
+.modal-content {
+  background: white;
+  border-radius: 5px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh; /* Set the maximum height to 90% of the viewport height */
+  overflow-y: auto; /* Allows the content to scroll if it's too long */
+  
+}

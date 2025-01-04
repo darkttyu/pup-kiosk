@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.map {
+  width: 100%; /* Set to 100% to match the viewport */
+  height: 100%; /* Set to 100% to match the container height */
+  overflow: hidden; /* Enable scrolling if the image is larger than the container */
+  cursor: grab;
+}
+
+.map:active {
+  cursor: gragging; /* Indicate active dragging */
+}
+
+.modal {
+  position: fixed;
+  top: 30px;
+  left: 500px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 5px;
+  max-width: 600px;
+  width: 90%;
+  overflow-y: auto;
+  justify-content: center;
+}
+
+.close {
+  padding: 10px;
+  float: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
