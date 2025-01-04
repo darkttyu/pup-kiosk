@@ -1,61 +1,60 @@
-/* Basic styling */
+/* Basic styling for the body */
 body {
-  font-family: Arial, sans-serif;
-  padding: 0;
+  font-family: Arial, sans-serif; /* Sets the font to Arial or sans-serif */
+  padding: 0; /* Removes any default padding */
 }
 
+/* Header styles */
 header {
-  background-color: #800000;
-  color: gold;
-  text-align: center;
-  padding: 25px; /* Adds padding around the header */
-  border: none; /* Close the border declaration */
-  margin-bottom: 20px;
+  background-color: #800000; /* Maroon background color */
+  color: gold; /* Gold text color */
+  text-align: center; /* Center-aligns the header text */
+  padding: 20px; /* Adds padding around the header */
+  border: none; /* Removes any border */
+  margin-bottom: 20px; /* Adds space below the header */
 }
 
 /* Container for image and text */
 .content {
-  display: block; /* Change from flex to block to stack elements vertically */
-  
+  display: block; /* Changes display to block to stack elements vertically */
 }
 
-/* Style for the image */
+/* Style for the image inside the content */
 .location-img {
-  max-width: 300px;
-  max-height: 300px;
-  border-radius: 10px;
+  max-width: 300px; /* Limits the width of the image to 300px */
+  max-height: 300px; /* Limits the height of the image to 300px */
+  border-radius: 10px; /* Rounds the corners of the image */
   margin-bottom: 20px; /* Adds space below the image */
-  margin-left: 90px;
+  margin-left: 90px; /* Adds left margin to the image */
 }
 
-/* Style for the text */
+/* Style for the text content */
 .location-info {
-  max-width: 55%;
-  padding-left: 115px;
-  overflow: auto;
-  text-align: justify;
+  max-width: 55%; /* Limits the width of the text to 55% of the container */
+  padding-left: 115px; /* Adds padding to the left side of the text */
+  overflow: auto; /* Ensures text content is scrollable if it overflows */
+  text-align: justify; /* Justifies the text alignment */
 }
 
-/* Separator between image and text */
+/* Separator between image and text in the content */
 .content::before {
-  content: '';
-  border-left: 2px solid #ddd;
-  margin-left: 20px;
-  height: 100%;
+  content: ''; /* Adds an empty content for the separator */
+  border-left: 2px solid #ddd; /* Adds a vertical line separator */
+  margin-left: 20px; /* Adds left margin to the separator */
+  height: 100%; /* Sets the height of the separator to 100% */
 }
 
-/* Styling for paragraph text */
+/* Styling for paragraph text inside location-info */
 .location-info p {
-  line-height: 1.6;
+  line-height: 1.6; /* Sets the line-height for paragraphs to 1.6 for better readability */
 }
 
-/* Modal content box */
+/* Modal content box styles */
 .modal-content {
-  background: white;
-  border-radius: 5px;
-  max-width: 600px;
-  width: 90%;
-  max-height: 90vh; /* Set the maximum height to 90% of the viewport height */
-  overflow-y: auto; /* Allows the content to scroll if it's too long */
-  
+  background: white; /* Sets the background color to white */
+  border-radius: 5px; /* Adds rounded corners to the modal */
+  max-width: 600px; /* Limits the modal width to 600px */
+  width: 90%; /* Sets the width to 90% of the parent container */
+  max-height: 90vh; /* Limits the modal height to 90% of the viewport height */
+  overflow-y: auto; /* Enables vertical scrolling if the content overflows */
 }

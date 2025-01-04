@@ -1,46 +1,84 @@
+/* Global Styles */
 html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+  margin: 0;             /* Remove default margin */
+  padding: 0;            /* Remove default padding */
+  height: 100%;          /* Ensure the body takes full height */
+  overflow: hidden;      /* Prevent scrolling on the entire page */
 }
 
+/* Map Container Styles */
 .map {
-  width: 100%; /* Set to 100% to match the viewport */
-  height: 100%; /* Set to 100% to match the container height */
-  overflow: hidden; /* Enable scrolling if the image is larger than the container */
-  cursor: grab;
+  flex-grow: 1;          /* Allow the map to expand within its parent */
+  width: 100%;           /* Set the width to 100% to match the viewport */
+  height: 100%;          /* Set the height to 100% to match the container height */
+  overflow: hidden;      /* Hide any overflow (image larger than container) */
+  cursor: default;       /* Default cursor for the map */
 }
 
+/* Map Dragging Styles */
 .map:active {
-  cursor: gragging; /* Indicate active dragging */
+  cursor: grabbing;      /* Change cursor to grabbing while dragging */
 }
 
+/* Modal Styles */
 .modal {
-  position: fixed;
-  top: 30px;
-  left: 500px;
-  background-color: rgba(0, 0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  overflow: hidden;
+  position: fixed;       /* Fix modal in place on the screen */
+  top: 50px;             /* Offset modal from the top */
+  left: 600px;           /* Offset modal from the left */
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  display: flex;         /* Use flexbox for centering content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;   /* Center content vertically */
+  z-index: 1000;         /* Ensure the modal is on top of other content */
+  overflow: hidden;      /* Hide overflow content */
 }
 
+/* Modal Content Styles */
 .modal-content {
-  background: white;
-  border-radius: 5px;
-  max-width: 600px;
-  width: 90%;
-  overflow-y: auto;
-  justify-content: center;
+  background: white;      /* White background for modal content */
+  border-radius: 5px;     /* Rounded corners for the modal */
+  max-width: 600px;       /* Max width of the modal */
+  width: 90%;             /* Set modal width to 90% of its container */
+  overflow-y: auto;       /* Allow vertical scrolling if content exceeds height */
+  justify-content: center; /* Center the content */
 }
 
+/* Close Button Styles */
 .close {
-  padding: 10px;
-  float: right;
-  font-size: 1.5em;
-  font-weight: bold;
-  cursor: pointer;
+  padding: 10px;          /* Padding around the close button */
+  float: right;           /* Float the button to the right */
+  font-size: 1.5em;       /* Larger font size for the close button */
+  font-weight: bold;      /* Bold font weight */
+  cursor: pointer;       /* Pointer cursor for interactivity */
 }
 
+/* Header Styles */
+.header {
+  background-color: #800000; /* Maroon background */
+  color: gold;               /* Gold text color */
+  text-align: center;        /* Center the text */
+  padding: 5px;              /* Padding around the text */
+  font-size: 24px;           /* Font size for the header text */
+  font-weight: bold;         /* Bold header text */
+  position: sticky;          /* Sticky position so it stays at the top */
+  top: 0;                    /* Stick to the top of the viewport */
+  width: 100%;               /* Full width */
+  z-index: 10;               /* Ensure it stays on top of other elements */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #800000; /* Maroon background */
+  color: gold;               /* Gold font color */
+  text-align: center;        /* Center the text */
+  position: fixed;           /* Fix the footer at the bottom of the viewport */
+  bottom: 0;                 /* Position it at the bottom */
+  width: 100%;               /* Full width */
+  padding: 0;                /* Remove any padding */
+  margin: 0;                 /* Remove margin to prevent extra space */
+  height: 25px;              /* Set a fixed height for the footer */
+  line-height: 25px;         /* Vertically center the text within the footer */
+  display: flex;             /* Use flexbox for proper alignment */
+  justify-content: center;   /* Horizontally center the content */
+  align-items: center;       /* Vertically center the content */
+}
