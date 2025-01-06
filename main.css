@@ -4,6 +4,7 @@ html, body {
   padding: 0;            /* Remove default padding */
   height: 100%;          /* Ensure the body takes full height */
   overflow: hidden;      /* Prevent scrolling on the entire page */
+  font-family: Arial, sans-serif; 
 }
 
 /* Map Container Styles */
@@ -20,37 +21,33 @@ html, body {
   cursor: grabbing;      /* Change cursor to grabbing while dragging */
 }
 
-/* Modal Styles */
 .modal {
-  position: fixed;       /* Fix modal in place on the screen */
-  top: 50px;             /* Offset modal from the top */
-  left: 600px;           /* Offset modal from the left */
-  background-color: rgba(0, 0, 0, 0); /* Transparent background */
-  display: flex;         /* Use flexbox for centering content */
-  justify-content: center; /* Center content horizontally */
-  align-items: center;   /* Center content vertically */
-  z-index: 1000;         /* Ensure the modal is on top of other content */
-  overflow: hidden;      /* Hide overflow content */
+  position: fixed; /* Changed to fixed to stay in view while scrolling */
+  top: 50px; /* Adjust for modal position */
+  left: 600px;
+  z-index: 1000;
+  display: none;
 }
 
-/* Modal Content Styles */
 .modal-content {
-  background: white;      /* White background for modal content */
-  border-radius: 5px;     /* Rounded corners for the modal */
-  max-width: 600px;       /* Max width of the modal */
-  width: 90%;             /* Set modal width to 90% of its container */
-  overflow-y: auto;       /* Allow vertical scrolling if content exceeds height */
-  justify-content: center; /* Center the content */
+  max-height: 300px; /* Limit height for scrollable content */
+  overflow-y: auto; /* Enable scrolling */
 }
 
-/* Close Button Styles */
+/*
 .close {
-  padding: 10px;          /* Padding around the close button */
-  float: right;           /* Float the button to the right */
-  font-size: 1.5em;       /* Larger font size for the close button */
-  font-weight: bold;      /* Bold font weight */
-  cursor: pointer;       /* Pointer cursor for interactivity */
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
 }
+*/
+
+area:hover {
+  cursor: pointer;
+}
+
 
 /* Header Styles */
 .header {
